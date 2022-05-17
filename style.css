@@ -29,20 +29,6 @@ nav {
   display: none;
 }
 
-/* a {
-  text-decoration: none;
-  color: white;
-}
-.cursor-disabled {
-  cursor: not-allowed;
-} */
-/* li {
-  color: white;
-  font-weight: 400;
-  font-size: 18px;
-  margin-right: 20px;
-  margin-left: 10px;
-} */
 .landing-page .container {
   display: flex;
   flex-direction: column;
@@ -106,14 +92,13 @@ button {
   padding: 20px 0px;
 }
 .circle1 {
-  width: 60%;
+  width: 200px;
   border-radius: 50%;
   aspect-ratio: 1/1;
   background-image: url("woman.jpg");
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
-  /* margin-right: 20px; */
 }
 .circle2 {
   width: 200px;
@@ -123,7 +108,6 @@ button {
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
-  /* margin-left: 20px; */
 }
 .specialists-title {
   font-size: 20px;
@@ -137,9 +121,6 @@ button {
   color: rgb(91, 87, 87);
   margin-bottom: 15px;
 }
-/* .marek {
-  text-align: right;
-} */
 .specialist {
   font-size: 15px;
   margin-bottom: 20px;
@@ -165,7 +146,6 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* justify-content: space-between; */
   padding: 20px;
 }
 .offer-title {
@@ -173,7 +153,6 @@ button {
   color: white;
   font-weight: 700;
   margin-top: 30px;
-  /* margin-bottom: 70px; */
 }
 .boxes {
   display: flex;
@@ -181,6 +160,7 @@ button {
   background-position: center;
   background-size: cover;
   width: 60%;
+  min-width: 250px;
   aspect-ratio: 1/1;
   font-size: 18px;
   color: white;
@@ -242,11 +222,10 @@ footer {
   display: flex;
   align-items: center;
 }
-/* .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
+
+.footer-container p {
+  margin-bottom: 10px;
+}
 .fa-brands {
   font-size: 100%;
   margin-left: 10px;
@@ -295,9 +274,7 @@ footer {
     margin: 40px 20px;
     transition-duration: 0.5s;
   }
-  .circle1 {
-    width: 40%;
-  }
+
   .name {
     font-size: 18px;
   }
@@ -404,7 +381,8 @@ footer {
 
   .box {
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
+    flex-direction: column;
     text-align: left;
     padding: 20px;
   }
@@ -451,6 +429,7 @@ footer {
   }
   .wrapper {
     display: flex;
+    flex-direction: row;
     margin: 20px 0px;
     align-items: center;
   }
@@ -545,6 +524,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .footer-container p {
+    margin-bottom: 0;
   }
   .fa-brands {
     font-size: 30px;
